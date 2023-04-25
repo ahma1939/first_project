@@ -30,13 +30,13 @@
 .header__title {
   color: #000000;
   font-size: 102px;
-  flex-direction: column;
   width: 730px;
   z-index: 1;
-  left: 64px;
+  padding-left: 64px;
   position: relative;
   line-height: 96px;
-  font-weight: 600px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .header__subtite {
@@ -48,11 +48,11 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-
+  margin: 0;
 }
 
 .header__link {
-  color:#2f80ed;
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -98,6 +98,7 @@
   font-weight: normal;
   width: 175px;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -131,7 +132,7 @@
 }
 
 
-.section-title {            
+.section-title {
   color: #000000;
   line-height: 1.15;
   font-size: 60px;
@@ -159,15 +160,14 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  
   margin: 0 auto 0;
   list-style: none;
 }
 
 .table__cell {
   width: 250px;
-  margin-top: 60px;
-  padding: 0;
+  margin: 0;
+  padding: 60px 0 0;
 }
 
 .table__heading {
@@ -185,12 +185,14 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  padding: 100px 0 0;
 }
 
 .feynman__title {
@@ -217,7 +219,7 @@
   font-size: 36px;
   font-weight: normal;
   position: absolute;
-  right: 45px;
+  right: 48px;
   top: 50%;
 }
 
@@ -254,7 +256,7 @@
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
-  color:white;
+  color: white;
   display: flex;
 }
 
@@ -271,9 +273,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+  display: flex;
 }
 
 .column__heading {
@@ -285,7 +285,11 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+	justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer__column_info {
@@ -303,6 +307,5 @@
 
 .footer__column-link {
   text-decoration: none;
-  color: #2f80ed;
+  color: #f2f2f2;
 }
-
