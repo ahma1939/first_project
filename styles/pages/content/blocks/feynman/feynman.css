@@ -1,0 +1,11 @@
+.feynman {
+    min-height: 890px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(/Users/BatComp/Desktop/first_project-main/images/feynman.png);
+    background-size: 867px 637px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    padding: 100px 0 0;
+}
